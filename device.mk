@@ -1,4 +1,4 @@
-LOCAL_PATH := device/vernee/apollo_lite
+LOCAL_PATH := device/vernee/apollo_x
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -7,7 +7,7 @@ PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Recovery allowed devices
-TARGET_OTA_ASSERT_DEVICE := lite,apollo_lite,k15tb_a
+TARGET_OTA_ASSERT_DEVICE := x,apollo_x,k15tb_a
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -68,4 +68,4 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, vendor/mad/config/common.mk)
 
 # Vendor
-$(call inherit-product, vendor/vernee/apollo_lite/apollo_lite-vendor.mk)
+$(call inherit-product, vendor/vernee/apollo_x/apollo_x-vendor.mk)
