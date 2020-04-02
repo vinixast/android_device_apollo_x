@@ -1,3 +1,0 @@
-# Sysfs nodes
-/sys/devices/soc/soc:touch@/smartwake_active                    u:object_r:smartwake_sysfs:s0
-/sys/devices/soc/soc:touch@/wakeup_gesture                  	u:object_r:smartwake_sysfs:s0
