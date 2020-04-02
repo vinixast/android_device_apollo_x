@@ -1,18 +1,26 @@
 LOCAL_PATH := device/vernee/apollo_x
+# TODO
+#Overlays
+#DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1929
+TARGET_SCREEN_WIDTH := 1080
+ 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# TODO
 # Recovery allowed devices
 TARGET_OTA_ASSERT_DEVICE := x,apollo_x,k15tb_a
 
+# TODO
 # Lights
 PRODUCT_PACKAGES += \
     lights.mt6797
 
+# TODO
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
@@ -21,6 +29,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libxml2
 
+# TODO
 # Media
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
@@ -45,10 +54,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/meta_init.rc:root/meta_init.rc \
     $(LOCAL_PATH)/rootdir/ueventd.mt6797.rc:root/ueventd.mt6797.rc
 
+# TODO
 # TWRP
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
+# TODO
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprintd
@@ -56,16 +67,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
+# TODO
 # Vulkan
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:system/etc/permissions/android.hardware.vulkan.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:system/etc/permissions/android.hardware.vulkan.version.xml
 
 # Dalvik/HWUI
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
+# TODO
 # Common stuff
 $(call inherit-product, vendor/mad/config/common.mk)
 
+# TODO: Adding vendor files
 # Vendor
-$(call inherit-product, vendor/vernee/apollo_x/apollo_x-vendor.mk)
+#$(call inherit-product, vendor/vernee/apollo_x/apollo_x-vendor.mk)
