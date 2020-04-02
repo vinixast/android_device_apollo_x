@@ -1,0 +1,3 @@
+add_lunch_combo full_apollo_x-user
+add_lunch_combo full_apollo_x-userdebug
+add_lunch_combo full_apollo_x-eng
