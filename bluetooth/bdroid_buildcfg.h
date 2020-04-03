@@ -1,6 +1,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "ApolloX"
+#define BTM_DEF_LOCAL_NAME   "Apollo X"
 
 #endif

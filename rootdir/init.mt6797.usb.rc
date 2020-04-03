@@ -1023,6 +1023,9 @@ on property:sys.usb.config=mbim,adb,gs0gs1
     setprop sys.usb.state ${sys.usb.config}
     setprop sys.usb.acm_idx 1,2
 
+on property:sys.usb.config=*
+    write /sys/class/android_usb/android0/log ${sys.usb.config}
+
 on property:sys.usb.bicr=yes
     write /sys/class/android_usb/android0/f_mass_storage/bicr 1
     write /sys/class/android_usb/android0/f_mass_storage/lun/file "/dev/block/loop0"
@@ -1071,7 +1074,3 @@ on property:mediatek.em.usb.set=RG_USB20_VRT_VREF_SEL
 
 on property:mediatek.em.usb.set=RG_USB20_INTR_EN
 	write /sys/kernel/debug/usb20_phy/RG_USB20_INTR_EN ${mediatek.em.usb.value}
-
-#add by liliang.bao 
-on property:ril.sn.set=yes
-    write /sys/class/android_usb/android0/iSerial ${persist.radio.serial}
