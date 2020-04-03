@@ -3,6 +3,8 @@ LOCAL_PATH := device/vernee/apollo_x
 
 include vendor/mad/config/board.mk
 
+TARGET_OTA_ASSERT_DEVICE := apollo_x,k15tb_a
+
 # Platform
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_BOARD_PLATFORM := mt6797
