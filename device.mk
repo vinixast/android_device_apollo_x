@@ -39,6 +39,11 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
 	$(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
+# Input
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/keylayout/ACCDET.kl:system/usr/keylayout/ACCDET.kl \
+	$(LOCAL_PATH)/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/factory_init.project.rc:root/factory_init.project.rc \
@@ -60,7 +65,7 @@ PRODUCT_COPY_FILES += \
 include $(LOCAL_PATH)/product/*.mk
 
 # Dalvik heap configurations
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-4096-dalvik-heap.mk)
+$(call inherit-		product-if-exists, frameworks/native/build/phone-xxhdpi-4096-dalvik-heap.mk)
 
 # Call hwui memory config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-4096-hwui-memory.mk)
