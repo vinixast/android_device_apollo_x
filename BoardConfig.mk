@@ -114,7 +114,7 @@ BOARD_RIL_CLASS := ../../../device/vernee/apollo_x/ril
 BOARD_CONNECTIVITY_MODULE := conn_soc
 
 SIM_COUNT := 2 
-PRODUCT_PROPERTY_OVERRIDES += ro.telephony.sim.count=$(SIM_COUNT)
+PRODUCT_PROPERTY_OVERRIDES := \ ro.telephony.sim.count=2
 
 # LightHAL
 TARGET_PROVIDES_LIBLIGHT := true
