@@ -113,8 +113,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 BOARD_RIL_CLASS := ../../../device/vernee/apollo_x/ril
 BOARD_CONNECTIVITY_MODULE := conn_soc
 
-SIM_COUNT := 2 
-PRODUCT_PROPERTY_OVERRIDES := \ ro.telephony.sim.count=2
+
+#PRODUCT_PROPERTY_OVERRIDES := \ ro.telephony.sim.count=2
 
 # LightHAL
 TARGET_PROVIDES_LIBLIGHT := true
