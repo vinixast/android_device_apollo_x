@@ -1,6 +1,5 @@
 # Services
 /system/bin/ccci_fsd                                            u:object_r:ccci_fsd_exec:s0
-/system/bin/ccci_mdinit                                         u:object_r:ccci_mdinit_exec:s0
 /system/bin/md_ctrl                                             u:object_r:md_ctrl_exec:s0
 /system/bin/fuelgauged                                          u:object_r:fuelgauged_exec:s0
 /system/bin/gsm0710muxd                                         u:object_r:gsm0710muxd_exec:s0
@@ -11,13 +10,9 @@
 /system/bin/mxg2320d                                            u:object_r:mxg2320d_exec:s0
 /system/bin/memsicd3416x                                        u:object_r:memsicd3416x_exec:s0
 /system/bin/mtk_agpsd                                           u:object_r:mtk_agpsd_exec:s0
-/system/bin/nvram_daemon                                        u:object_r:nvram_daemon_exec:s0
-/system/bin/pq                                                  u:object_r:pq_exec:s0
 /system/bin/terservice                                          u:object_r:terservice_exec:s0
 /system/bin/thermal_manager                                     u:object_r:thermal_manager_exec:s0
-/system/bin/mtkrild                                             u:object_r:ril-daemon-mtk_exec:s0
 /system/bin/wifi2agps                                           u:object_r:wifi2agps_exec:s0
-/system/bin/wmt_loader                                          u:object_r:wmt_loader_exec:s0
 /system/bin/em_svr                                              u:object_r:em_svr_exec:s0
 /system/bin/kpoc_charger                                        u:object_r:kpoc_charger_exec:s0
 /system/bin/etsd                                                u:object_r:etsd_exec:s0
@@ -25,10 +20,6 @@
 # exfat & ntfs
 /system/bin/mount\.ntfs                                         u:object_r:mkfs_exec:s0
 /system/bin/mount\.exfat                                        u:object_r:mkfs_exec:s0
-
-# Meta mode
-/system/bin/meta_tst                                            u:object_r:meta_tst_exec:s0
-/system/bin/factory                                             u:object_r:factory_exec:s0
 
 # Files from firmware/nv partitions
 /protect_f(/.*)?                                                u:object_r:protect_f_data_file:s0
@@ -69,7 +60,6 @@
 /dev/stpgps(/.*)?                                               u:object_r:stpgps_device:s0
 /dev/stpwmt(/.*)?                                               u:object_r:stpwmt_device:s0
 /dev/wmtdetect                                                  u:object_r:wmtdetect_device:s0
-/dev/ttyC0                                                      u:object_r:gsm0710muxd_device:s0
 /dev/ttyC1                                                      u:object_r:mdlog_device:s0
 /dev/radio(/.*)?                                                u:object_r:radio_device:s0
 /dev/fm                                                         u:object_r:fm_device:s0
@@ -116,7 +106,6 @@
 /sys/kernel/ccci(/.*)?                                          u:object_r:sysfs_ccci:s0
 /sys/bus/platform/drivers/dev_info/dev_info                     u:object_r:sysfs_devinfo:s0
 /sys/devices/platform/mtk_disp_mgr.0/rgb                        u:object_r:display_color_sysfs:s0
-/sys/bus/platform/drivers/msensor/daemon                        u:object_r:msensord_daemon_sysfs:s0
 /sys/bus/platform/drivers/gyroscope/gyro_orientation            u:object_r:gyro_orientation_sysfs:s0
 /sys/kernel/charge_levels/quick_charge_enable                   u:object_r:fast_charge_sysfs:s0
 /sys/kernel/charge_levels/charge_level_ac                       u:object_r:fast_charge_sysfs:s0
