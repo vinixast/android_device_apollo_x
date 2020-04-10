@@ -70,7 +70,7 @@ PRODUCT_PACKAGES += \
     libcurl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
+    device/vernee/apollo_x/prebuilt/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
 
 # Jelly
 PRODUCT_PACKAGES += \
@@ -155,11 +155,11 @@ PRODUCT_PACKAGES += \
 # Bootanimation
 ifneq ($(filter 720,$(TARGET_SCREEN_WIDTH)),)
     PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/prebuilt/bootanimation/720p.zip:system/media/bootanimation.zip
+        device/vernee/apollo_x/prebuilt/bootanimation/720p.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter 1080,$(TARGET_SCREEN_WIDTH)),)
     PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/prebuilt/bootanimation/1080p.zip:system/media/bootanimation.zip
+        device/vernee/apollo_x/prebuilt/bootanimation/1080p.zip:system/media/bootanimation.zip
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
