@@ -13,7 +13,7 @@ VSYNC_EVENT_PHASE_OFFSET_NS := -8000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := -8000000
 PRESENT_TIME_OFFSET_FROM_VSYNC_NS := 0
 
-BOARD_EGL_CFG := device/apollo_x/prebuilt/etc/egl.cfg
+BOARD_EGL_CFG := device/vernee/apollo_x/prebuilt/etc/egl.cfg
 
 # Vold
 TARGET_KERNEL_HAVE_EXFAT := true
