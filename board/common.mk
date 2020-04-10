@@ -194,11 +194,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.mados.display.version=$(MADOS_DISPLAY_VERSION)
 
 # include other configs
-include $(LOCAL_PATH)/board/permissions.mk
-include $(LOCAL_PATH)/board/media.mk
-include $(LOCAL_PATH)/board/wifi.mk
-include $(LOCAL_PATH)/board/telephony.mk
-include $(LOCAL_PATH)/board/google_override.mk
+include $(LOCAL_PATH)/permissions.mk
+include $(LOCAL_PATH)/media.mk
+include $(LOCAL_PATH)/wifi.mk
+include $(LOCAL_PATH)/telephony.mk
+include $(LOCAL_PATH)/google_override.mk
 
 # DEBUG_BOOT
-include $(LOCAL_PATH)/board/debug_boot.mk
+include $(LOCAL_PATH)/debug_boot.mk
