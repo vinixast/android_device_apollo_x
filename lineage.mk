@@ -13,12 +13,12 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
 # Release name
-PRODUCT_RELEASE_NAME := apollo_x
+PRODUCT_RELEASE_NAME := apollo_lite
 
-PRODUCT_DEVICE := apollo_x
-PRODUCT_NAME := lineage_apollo_x
+PRODUCT_DEVICE := apollo_lite
+PRODUCT_NAME := lineage_apollo_lite
 PRODUCT_BRAND := Vernee
-PRODUCT_MODEL := Apollo_x
+PRODUCT_MODEL := Apollo_lite
 PRODUCT_MANUFACTURER := Vernee
 PRODUCT_RESTRICT_VENDOR_FILES := false
 

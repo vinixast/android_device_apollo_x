@@ -3,7 +3,7 @@ LOCAL_PATH := device/vernee/apollo_x
 
 include $(LOCAL_PATH)/board/board.mk
 
-TARGET_OTA_ASSERT_DEVICE := apollo_x,k15tb_a
+TARGET_OTA_ASSERT_DEVICE := lite,apollo_lite,k15tb_a
 
 # Platform
 ARCH_ARM_HAVE_TLS_REGISTER := true
