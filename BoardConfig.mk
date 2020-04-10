@@ -140,6 +140,10 @@ TW_DEFAULT_EXTERNAL_STORAGE := true
 
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
+# LZMA compression for recovery's & kernel ramdisk....
+BOARD_CUSTOM_BOOTIMG_MK := device/vernee/apollo_x/custombootimg.mk
+BOARD_CANT_BUILD_RECOVERY_FROM_BOOT_PATCH := true
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
