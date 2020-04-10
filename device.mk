@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Common stuff
-$(call inherit-product, vendor/mad/config/common.mk)
+$(call inherit-product, $(LOCAL_PATH)/board/common.mk)
 
 # Vendor
 $(call inherit-product, vendor/vernee/apollo_lite/apollo_lite-vendor.mk)
