@@ -68,4 +68,4 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, vendor/mad/config/common.mk)
 
 # Vendor
-$(call inherit-product, vendor/vernee/apollo_lite/apollo_lite-vendor.mk)
+$(call inherit-product, vendor/vernee/apollo_x/apollo_xe-vendor.mk)
